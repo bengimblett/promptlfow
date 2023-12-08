@@ -1,4 +1,4 @@
-pf connection create --file ./<name>/azure_openai.yaml --set api_key=? api_base=https://?.openai.azure.com/ --name open_ai_connection
+pf connection create --file ./<name>/azure_openai.yaml --set api_key=? api_base=https://?.openai.azure.com/ --name azure_open_ai_connection
 pf flow build --source ./<name> --output dist --format docker
 cd ..\dist
 docker build -t <image name>:<version> .
